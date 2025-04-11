@@ -12,14 +12,14 @@ body {
     min-height: 100px;
 }
 .controls {
-    padding: 2px;
+    padding: 4px;
     background: #333333;
     display: flex;
-    gap: 5px;
+    gap: 8px;
 }
 #resizer {
     height: 5px;
-    background: #9a9660;
+    background: #676767;
     cursor: row-resize;
     position: relative;
 }
@@ -36,18 +36,29 @@ button {
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
-    color: #9a9660;
+    color: #0f0;
     background-color: transparent;
-    border-radius: 8px;
+    border: 1px solid #0f0;
+    height: 32px;
 }
 
 .font-controls {
     margin-left: auto;
     display: flex;
-    gap: 2px;
+    gap: 8px;
 }
 
 .font-controls button {
     padding: 5px 10px;
     min-width: 40px;
+}
+
+.language-switcher select {
+    padding: 4px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 32px;
+    background: transparent;
+    color: #0f0;
+    border: 1px solid #0f0;
 }

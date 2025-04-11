@@ -8,8 +8,15 @@
 <body>
 <div id="editor"></div>
 <div class="controls">
-    <button onclick="runCode()">Run</button>
-    <button onclick="clearConsole()">Clear</button>
+    <div class="language-switcher">
+        <button onclick="runCode()">Run</button>
+        <button onclick="clearConsole()">Clear</button>
+        <label for="languageSelect" style="display: none">Select</label>
+        <select id="languageSelect" onchange="switchLanguage(this.value)">
+            <option value="javascript">JavaScript</option>
+            <option value="typescript">TypeScript</option>
+        </select>
+    </div>
     <div class="font-controls">
         <button onclick="changeFontSize(-2)">A-</button>
         <button onclick="changeFontSize(2)">A+</button>
